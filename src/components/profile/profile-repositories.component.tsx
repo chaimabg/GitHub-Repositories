@@ -70,7 +70,7 @@ const ProfileRepositoriesComponent = () => {
             <div className={styles.fullWidth}>
                 {repositories.length ? repositories.map((repository, index) => {
                             if (searchValue === "" || repository.name.toLowerCase().startsWith(searchValue.toLowerCase())) {
-                           return  (  <>
+                           return  (  <div key={index}>
                                     <Tooltip title="Open repository" placement="bottom-start">
 
 
@@ -84,7 +84,7 @@ const ProfileRepositoriesComponent = () => {
                                     <p>{repository.description}</p>
                                     <p>updated {formatDate(repository.updated_at)}</p>
                                     <Divider/>
-                                </>)
+                                </div>)
                             }
                         }
                     ) :
