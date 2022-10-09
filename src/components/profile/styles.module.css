@@ -1,0 +1,43 @@
+.box {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+    border-bottom: 1px solid #ebeae6;
+}
+.card{
+    box-shadow: none !important;
+    border: none !important;
+}
+.navButton {
+border: none !important;
+background-color: white !important;
+box-shadow: none !important;
+border-bottom: 5px solid #fbc02d !important;
+color:  #89817f !important ;
+}
+.navButton:hover{
+    background-color: rgb(246,245,245)!important;
+}
+.avatar{
+    width: 250px !important;
+    height: 250px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*-----------------------*/
+.fullWidth{
+    width: 100%;
+}
+.centerText{
+   text-align: center;
+}
+.ml5{
+    margin-left:5px
+}
+.mb15{
+    margin-bottom: 15px;
+}
+.m10{
+   margin:10px;
+}
