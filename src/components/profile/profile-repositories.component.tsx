@@ -1,5 +1,4 @@
-import React, { useEffect, useState} from "react";
-import "./profile.css";
+import React, {useEffect, useState} from "react";
 import {
     Box, Button, Chip,
     Divider,
@@ -18,7 +17,7 @@ import styles from './styles.module.css';
 
 const ProfileRepositoriesComponent = () => {
     const [repositories, setRepositories] = useState<any[]>([]);
-    const [searchValue, setSearchValue]:[string, (search: string) => void] = useState("");
+    const [searchValue, setSearchValue]: [string, (search: string) => void] = useState("");
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setSearchValue(event.target.value)
@@ -30,7 +29,7 @@ const ProfileRepositoriesComponent = () => {
         });
     }, [repositories]);
 
-
+    // format a date to 'MMM Do YY' exp: Sep 13th 22
     const formatDate = (date: any) => {
         return moment(date).format("MMM Do YY");
     }
@@ -45,7 +44,7 @@ const ProfileRepositoriesComponent = () => {
                             variant="contained"
                             startIcon={<BookOutlinedIcon/>}
                         >
-                            Repositories <Chip label={repositories.length} size="small" className={styles.ml5} />
+                            Repositories <Chip label={repositories.length} size="small" className={styles.ml5}/>
                         </Button>
                     </Typography>
                 </Box>
@@ -63,23 +62,22 @@ const ProfileRepositoriesComponent = () => {
                                    </InputAdornment>
                                }
                                fullWidth/>
-
             </Box>
 
 
             <div className={styles.fullWidth}>
                 {repositories.length ? repositories.map((repository, index) => {
                             if (searchValue === "" || repository.name.toLowerCase().startsWith(searchValue.toLowerCase())) {
-                           return  (  <div key={index}>
+                                return (<div key={index}>
                                     <Tooltip title="Open repository" placement="bottom-start">
 
-
-                                        <a href={repository.html_url} target="_blank" className="repository-link">
+                                        <a href={repository.html_url} target="_blank" className={styles.repositoryLink}>
                                             <h2>{repository.name}
                                                 <Chip className={styles.ml5}
                                                       label={repository.private ? "private" : "public"}
                                                       variant="outlined" size="small"/></h2>
                                         </a>
+
                                     </Tooltip>
                                     <p>{repository.description}</p>
                                     <p>updated {formatDate(repository.updated_at)}</p>

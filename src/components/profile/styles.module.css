@@ -25,11 +25,23 @@ color:  #89817f !important ;
     margin-left: auto;
     margin-right: auto;
 }
+.repositoryLink{
+    text-decoration: none;
+}
+.repositoryLink>h2:hover{
+    color: rgb(60, 60, 173);
+}
+
 /*-----------------------*/
 .fullWidth{
     width: 100%;
 }
-.centerText{
+.center{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.textCenter{
    text-align: center;
 }
 .ml5{
