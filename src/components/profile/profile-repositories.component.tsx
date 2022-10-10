@@ -70,8 +70,7 @@ const ProfileRepositoriesComponent = () => {
                             if (searchValue === "" || repository.name.toLowerCase().startsWith(searchValue.toLowerCase())) {
                                 return (<div key={index}>
                                     <Tooltip title="Open repository" placement="bottom-start">
-
-                                        <a href={repository.html_url} target="_blank" className={styles.repositoryLink}>
+                                        <a href={repository.html_url} target="_blank" rel="noreferrer" className="repository-link">
                                             <h2>{repository.name}
                                                 <Chip className={styles.ml5}
                                                       label={repository.private ? "private" : "public"}
@@ -83,8 +82,11 @@ const ProfileRepositoriesComponent = () => {
                                     <p>updated {formatDate(repository.updated_at)}</p>
                                     <Divider/>
                                 </div>)
+                            }else {
+                                return (<></>)
                             }
-                        }
+                  
+                        } 
                     ) :
                     <div>
                         <CircularProgress color="inherit" className={styles.m10}/>
