@@ -74,7 +74,7 @@ const ProfileRepositoriesComponent = () => {
                                     <Tooltip title="Open repository" placement="bottom-start">
 
 
-                                        <a href={repository.html_url} target="_blank" className="repository-link">
+                                        <a href={repository.html_url} target="_blank" rel="noreferrer" className="repository-link">
                                             <h2>{repository.name}
                                                 <Chip className={styles.ml5}
                                                       label={repository.private ? "private" : "public"}
@@ -85,8 +85,11 @@ const ProfileRepositoriesComponent = () => {
                                     <p>updated {formatDate(repository.updated_at)}</p>
                                     <Divider/>
                                 </div>)
+                            }else {
+                                return (<></>)
                             }
-                        }
+                  
+                        } 
                     ) :
                     <div>
                         <CircularProgress color="inherit" className={styles.m10}/>
