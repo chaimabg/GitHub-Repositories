@@ -24,7 +24,7 @@ $ git clone https://github.com/chaimabg/GitHub-Repositories.git
 $ cd GitHub-Repositories
 $ npm install
 ```
-Before running the project you need to create a `.env` file In the project directory that contains this environment variables:
+Before running the project you need to create a `.env` file in the project directory that contains this environment variables:
 
 ```
 REACT_APP_GITHUB_TOKEN='your github token'
