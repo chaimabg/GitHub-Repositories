@@ -1,7 +1,6 @@
 import React  from "react";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import {Stack, AppBar,Toolbar,IconButton,Typography} from "@mui/material";
-import MenuIcon from '@mui/icons-material/Menu';
 import GitHubIcon from '@mui/icons-material/GitHub';
 const darkTheme = createTheme({
     palette: {
