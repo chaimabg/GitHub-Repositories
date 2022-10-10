@@ -70,7 +70,7 @@ const ProfileRepositoriesComponent = () => {
                             if (searchValue === "" || repository.name.toLowerCase().startsWith(searchValue.toLowerCase())) {
                                 return (<div key={index}>
                                     <Tooltip title="Open repository" placement="bottom-start">
-                                        <a href={repository.html_url} target="_blank" rel="noreferrer" className="repository-link">
+                                        <a href={repository.html_url} target="_blank" rel="noreferrer" className={styles.repositoryLink}>
                                             <h2>{repository.name}
                                                 <Chip className={styles.ml5}
                                                       label={repository.private ? "private" : "public"}
