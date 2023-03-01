@@ -3,6 +3,7 @@ module.exports = {
         collect: {
 
             url: "http://127.0.0.1:3000/",
+            startServerCommand: "npm run start",
             numberOfRuns: 1, // Set low to speed up the test runs. Default is 3.
             //headful: true, // Show the browser which is helpful when checking the config
             settings: {
