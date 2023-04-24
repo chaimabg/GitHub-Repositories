@@ -1,3 +1,4 @@
 {
-  "http://127.0.0.1:3000/": "http://localhost:9001/app/projects/https-github.com-chaimabg-github-reposit/compare/a3c6b36d-3608-49fe-841b-13cfccf289f4?compareUrl=http%3A%2F%2F127.0.0.1%3APORT%2F"
+  "https://appdev4.expensya.com/Portal/#/Login": "http://127.0.0.1:9001/app/projects/github-repositories/compare/ccd3dccc-6d03-4788-bce5-eb5766f5f795?compareUrl=https%3A%2F%2Fappdev4.expensya.com%2FPortal%2F%23%2FLogin",
+  "https://appdev4.expensya.com/Portal/#/Dashboard": "http://127.0.0.1:9001/app/projects/github-repositories/compare/ccd3dccc-6d03-4788-bce5-eb5766f5f795?compareUrl=https%3A%2F%2Fappdev4.expensya.com%2FPortal%2F%23%2FDashboard"
 }

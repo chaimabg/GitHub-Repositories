@@ -7,6 +7,7 @@
     "npm": "6.14.17"
   },
   "dependencies": {
+    "@chaimabgh/lighthouse-cli": "^0.1.1",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
     "@mui/icons-material": "^5.10.6",
@@ -15,12 +16,18 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/jasmine": "^3.10.2",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.11.64",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
     "axios": "^1.1.2",
+    "jasmine": "^3.10.0",
     "moment": "^2.29.4",
+    "nodegit": "^0.27.0",
+    "playwright": "^1.17.1",
+    "playwright-lighthouse": "^2.1.0",
+    "puppeteer": "^19.9.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.2",
@@ -32,7 +39,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test-lighthouse": "node_modules/jasmine/bin/jasmine.js"
   },
   "eslintConfig": {
     "extends": [
@@ -53,7 +61,6 @@
     ]
   },
   "devDependencies": {
-    "@lhci/cli": "^0.11.0",
     "dotenv": "^16.0.3"
   }
 }
